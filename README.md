@@ -1,6 +1,6 @@
 # Azure NAT with Linux VM
 
-This repo describes how to deploy a basic Ubuntu VM that can be utilised for basic egress testing in a DEV environment. It was born out of the need to replace expensive Palo Altos as a task to ensure that we have egress for some resources. Unfortunately our setup already had an Azure Firewall, and it was sitting in the same vnet that we need to swap the Palo's out with; due to the subnet naming requirement of Azure Firewall, we couldn't have two subnets named `AzureFirewallSubnet` in the same vnet, else this would have been our choice. We wanted something simple that didn't require another license or manual setup; it had to be something that can be deployed and destroyed as PRs are raised.
+This repo describes how to deploy a basic Ubuntu VM in azure china cloud that can be utilised for basic egress testing in a DEV environment. It was born out of the need to replace expensive Palo Altos as a task to ensure that we have egress for some resources. Unfortunately our setup already had an Azure Firewall, and it was sitting in the same vnet that we need to swap the Palo's out with; due to the subnet naming requirement of Azure Firewall, we couldn't have two subnets named `AzureFirewallSubnet` in the same vnet, else this would have been our choice. We wanted something simple that didn't require another license or manual setup; it had to be something that can be deployed and destroyed as PRs are raised.
 
 ![](ubuntu-iptables.png)
 
